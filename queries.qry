@@ -1,0 +1,10 @@
+/**
+ * New query file
+ */
+
+query selectTicketsByTank {
+  description: "Select all Tickets based on Tank"
+  statement:
+      SELECT org.hyperchain.truck.Ticket
+          WHERE (load.tankNumber == _$tankNumber)
+}
